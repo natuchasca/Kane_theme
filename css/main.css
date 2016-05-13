@@ -1,3 +1,103 @@
-@import "../sass/materialize/css/materialize.css";
-@import "../sass/varibles.scss";
-@import "../sass/styles.scss";
+@import url(../sass/materialize/css/materialize.css);
+/* COLORES
+verde #27ad60
+azul #2c3e50
+naranjo barras #e67e22
+cafe #8f5f38
+gris oscuro #443e44
+gris claro #c1c1c1
+green hover what we do #2a7257
+*/
+* {
+  font-family: 'Roboto'; }
+
+header, .portada, .what, .awesome, footer {
+  background-color: #27ad60;
+  padding: 30px 0px;
+  color: white; }
+
+.color {
+  color: black;
+  padding: 30px 0px; }
+  .color hr {
+    width: 250px;
+    border: 1px solid black;
+    background-color: 1px solid black; }
+
+.about, .best, .clients, .contacto {
+  background-color: #2c3e50;
+  padding: 30px 0px;
+  color: white; }
+
+.separador {
+  width: 250px;
+  text-align: center;
+  border: 1px solid white;
+  background-color: 1px solid white; }
+
+.btn {
+  background-color: #443e44; }
+
+/* Logo y Nav */
+header {
+  padding-bottom: 15px; }
+  header nav {
+    background-color: transparent;
+    box-shadow: none; }
+
+/* Imagen Portada */
+.portada {
+  background-image: url(../img/carousel-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  font-size: 30px; }
+  .portada h1 {
+    font-size: 60px; }
+  .portada p {
+    font-size: 30px; }
+
+/* Color Palette */
+.cuadrado {
+  width: 150px;
+  height: 100px;
+  display: inline block;
+  background-color: #A7dbdb; }
+
+/* About Us */
+.about img {
+  width: 80%;
+  height: auto; }
+
+/* What we do */
+/* Awesome Team */
+.awesome h6 {
+  color: black;
+  font-size: 12px; }
+.awesome .dashed {
+  border: 1px dashed #c1c1c1;
+  background-color: 1px dashed #c1c1c1; }
+.awesome .gris {
+  color: #c1c1c1; }
+
+/* Best Price */
+/* Clients Say */
+/* Contacto */
+/* Sociales */
+.sociales {
+  background-image: url(../img/img-divider-img.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  text-align: center;
+  font-size: 100px;
+  color: white;
+  padding: 100px 0px; }
+
+/* Footer */
+footer p {
+  display: inline;
+  color: #443e44; }
+footer a {
+  color: white; }
+
+/*# sourceMappingURL=main.css.map */
