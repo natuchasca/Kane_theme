@@ -44,6 +44,9 @@ header, .portada, .what, .awesome, footer {
 
 .btn {
 	background-color: #443e44;
+	&:hover {
+		background-color: $orange;
+	}
 }
 
 
@@ -75,12 +78,39 @@ header {
 
 
 /* Color Palette */
-.cuadrado {
+
+@mixin cuadrado ($color) {
 	width: 150px;
 	height: 100px;
-	display: inline block;
-	background-color: #A7dbdb;
+	display: inline-block;
+	background-color: $color;
 }
+
+.azulino {@include cuadrado (#69D2E7);}
+.celeste {@include cuadrado (#A7DBDB);}
+.crudo {@include cuadrado (#E0E4CC);}
+.naranjo {@include cuadrado (#F38630);}
+.fanta {@include cuadrado (#FA6900);}
+.rosa {@include cuadrado (#E94C6F);}
+.cafe {@include cuadrado (#542733);}
+.gris {@include cuadrado (#5A6A62);}
+.verdoso {@include cuadrado (#C6D5CD);}
+.amarillo {@include cuadrado (#FDF200);}
+.rojo {@include cuadrado (#DB3340);}
+.calabaza {@include cuadrado (#E8B71A);}
+.crema {@include cuadrado (#F7EAC8);}
+.verde {@include cuadrado (#1FDA9A);}
+.azul {@include cuadrado (#28ABE3);}
+.verdoso {@include cuadrado (#588C73);}
+.platano {@include cuadrado (#F2E394);}
+.mandarin {@include cuadrado (#F2AE72);}
+.pomelo {@include cuadrado (#D96459);}
+.vino {@include cuadrado (#8C4646);}
+.olivo {@include cuadrado (#D0C91F);}
+.ciano {@include cuadrado (#85C4B9);}
+.deepazul {@include cuadrado (#008BBA);}
+.rojado {@include cuadrado (#DF514C);}
+.rojored {@include cuadrado (#DC403B);}
 
 
 /* About Us */
@@ -92,6 +122,35 @@ header {
 }
 
 /* What we do */
+.what {
+	.icon-image {
+		width: 120px;
+		height: 120px;
+		text-align: center;
+		margin: 0 auto;
+		padding-top: 10px;
+		background-image: url(../img/icon-bg.png);
+	}
+	.item-box {
+		padding: 20px 20px;
+		display: block;
+		hr.hidden {
+			display: none;
+		}
+	}
+	.item-box:hover {
+		background-color: #2a7257;
+		cursor: pointer;
+		h4 {
+			color: $orange;
+		}
+		hr.hidden {
+			display: block;
+			border: 1px solid white;
+			background-color: 1px solid white;
+		}
+	}
+}
 
 /* Awesome Team */
 .awesome {
@@ -99,18 +158,36 @@ header {
 		color: black;
 		font-size: 12px;
 	}
+	img {
+		width: 60%;
+		height: auto;
+	}
 	.dashed {
 		border: 1px dashed #c1c1c1;
 		background-color: 1px dashed #c1c1c1;
 	}
-	.gris {
+	.texto-gris {
 		color: #c1c1c1;
+		padding: 0px 10px;
+	}
+	.iconos {
+		font-size: 18px;
+		color: #c1c1c1;
+		.fa {
+			margin-right: 10px;
+		}
 	}
 }
 
 /* Best Price */
 
 /* Clients Say */
+.clients {
+
+	.autor {
+		color: $orange;
+	}
+}
 
 /* Contacto */
 

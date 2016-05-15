@@ -37,6 +37,8 @@ header, .portada, .what, .awesome, footer {
 
 .btn {
   background-color: #443e44; }
+  .btn:hover {
+    background-color: #e67e22; }
 
 /* Logo y Nav */
 header {
@@ -58,11 +60,155 @@ header {
     font-size: 30px; }
 
 /* Color Palette */
-.cuadrado {
+.azulino {
   width: 150px;
   height: 100px;
-  display: inline block;
-  background-color: #A7dbdb; }
+  display: inline-block;
+  background-color: #69D2E7; }
+
+.celeste {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #A7DBDB; }
+
+.crudo {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #E0E4CC; }
+
+.naranjo {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #F38630; }
+
+.fanta {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #FA6900; }
+
+.rosa {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #E94C6F; }
+
+.cafe {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #542733; }
+
+.gris {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #5A6A62; }
+
+.verdoso {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #C6D5CD; }
+
+.amarillo {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #FDF200; }
+
+.rojo {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #DB3340; }
+
+.calabaza {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #E8B71A; }
+
+.crema {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #F7EAC8; }
+
+.verde {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #1FDA9A; }
+
+.azul {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #28ABE3; }
+
+.verdoso {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #588C73; }
+
+.platano {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #F2E394; }
+
+.mandarin {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #F2AE72; }
+
+.pomelo {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #D96459; }
+
+.vino {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #8C4646; }
+
+.olivo {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #D0C91F; }
+
+.ciano {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #85C4B9; }
+
+.deepazul {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #008BBA; }
+
+.rojado {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #DF514C; }
+
+.rojored {
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  background-color: #DC403B; }
 
 /* About Us */
 .about img {
@@ -70,18 +216,52 @@ header {
   height: auto; }
 
 /* What we do */
+.what .icon-image {
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 10px;
+  background-image: url(../img/icon-bg.png); }
+.what .item-box {
+  padding: 20px 20px;
+  display: block; }
+  .what .item-box hr.hidden {
+    display: none; }
+.what .item-box:hover {
+  background-color: #2a7257;
+  cursor: pointer; }
+  .what .item-box:hover h4 {
+    color: #e67e22; }
+  .what .item-box:hover hr.hidden {
+    display: block;
+    border: 1px solid white;
+    background-color: 1px solid white; }
+
 /* Awesome Team */
 .awesome h6 {
   color: black;
   font-size: 12px; }
+.awesome img {
+  width: 60%;
+  height: auto; }
 .awesome .dashed {
   border: 1px dashed #c1c1c1;
   background-color: 1px dashed #c1c1c1; }
-.awesome .gris {
+.awesome .texto-gris {
+  color: #c1c1c1;
+  padding: 0px 10px; }
+.awesome .iconos {
+  font-size: 18px;
   color: #c1c1c1; }
+  .awesome .iconos .fa {
+    margin-right: 10px; }
 
 /* Best Price */
 /* Clients Say */
+.clients .autor {
+  color: #e67e22; }
+
 /* Contacto */
 /* Sociales */
 .sociales {
