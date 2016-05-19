@@ -14,13 +14,13 @@ green hover what we do #2a7257
 
 header, .portada, .what, .awesome, footer {
 	background-color: $back-verde;
-	padding: 30px 0px;
+	padding: 50px 0px;
 	color: white;
 }
 
 .color {
 	color: black;
-	padding: 30px 0px;
+	padding: 50px 0px;
 	hr {
 		width: 250px;
 		border: 1px solid black;
@@ -30,7 +30,7 @@ header, .portada, .what, .awesome, footer {
 
 .about, .best, .clients, .contacto {
 	background-color: $back-azul;
-	padding: 30px 0px;
+	padding: 50px 0px;
 	color: white;
 }
 
@@ -49,6 +49,10 @@ header, .portada, .what, .awesome, footer {
 	}
 }
 
+.bajada {
+	margin-bottom: $margin-bottom-30;
+}
+
 
 
 /* Logo y Nav */
@@ -57,8 +61,12 @@ header {
 	nav {
 		background-color: transparent;
 		box-shadow: none;
+		ul a:hover {
+			background-color: $orange;
+		}
 	}
 }
+
 
 
 /* Imagen Portada */
@@ -78,10 +86,10 @@ header {
 
 
 /* Color Palette */
-
 @mixin cuadrado ($color) {
 	width: 150px;
 	height: 100px;
+	margin: 0px 10px;
 	display: inline-block;
 	background-color: $color;
 }
@@ -113,13 +121,35 @@ header {
 .rojored {@include cuadrado (#DC403B);}
 
 
+
+
 /* About Us */
 .about {
+	font-size: 14px;
 	img {
-		width: 80%;
+		width: 90%;
 		height: auto;
 	}
+	.progress-part {
+		margin-top: 50px;
+		.progress {
+			height: 10px;
+			background-color: $gris-claro;
+			border: 2px solid $gris-claro;
+			border-radius: 0px;
+			.determinate {
+				background-color: $orange;
+			}
+		}
+	}
+		
+	.item {
+		margin-top: -10px;
+		font-size: 12px;
+	}
 }
+
+
 
 /* What we do */
 .what {
@@ -179,7 +209,55 @@ header {
 	}
 }
 
+
+
 /* Best Price */
+.best {
+	.box {
+		border: 1px solid $back-verde;
+		h5 {
+			padding: 10px;
+			color: silver;
+			font-size: 20px;
+		}
+		.fondo-cafe {
+			background-color: $cafe;
+			.starter {
+				margin-top: 0px;
+				padding-top: 20px;
+			}
+		}
+		.fondo-verde {
+			background-color: $back-verde;
+			padding: 5px;
+			p {
+				font-size: 14px;
+				span {
+					font-size: 40px;
+				}
+			}
+			.free {
+				margin-top: -20px;
+				font-size: 12px;
+			}
+		}
+		.fondo-bco {
+			background-color: white;
+			color: black;
+			padding: 5px;
+		}
+		.button-box {
+			padding: 20px 10px 10px 10px;
+		}
+		&:hover {
+			border: 1px solid $orange;
+			cursor: pointer;
+			margin-top: -30px;
+		}
+	}
+}
+
+
 
 /* Clients Say */
 .clients {
@@ -189,7 +267,28 @@ header {
 	}
 }
 
+
+
+
 /* Contacto */
+.contacto {
+	input, textarea {
+		background-color: white;
+		box-sizing: border-box;
+		margin-bottom: -10px;
+	}
+	label {
+		margin-left: 10px;
+	}
+	button {
+		margin-top: 20px;
+		width: 100px;
+		text-align: center;
+		padding: 0px;
+	}
+}
+
+
 
 /* Sociales */
 .sociales {
@@ -211,4 +310,43 @@ footer {
 	a {
 		color: white;
 	}
+	hr {
+		width: 80px;
+		border: 1px solid white;
+		background-color: 1px solid white;
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	h4 {
+		text-align: center;
+	}
+	i {
+		display: inline;
+	}
+	.content-footer {
+		margin-left: 60px;
+	}
+	.input-field {
+		width: 150px;
+		display: block;
+		i {
+			background-color: $grey;
+			color: $orange;
+			padding: 10px;
+		}
+		input {
+			background-color: white;
+			border: 1px solid $grey;
+			position: absolute;
+			height: 33px;
+			padding-left: 20px;
+			color: black;
+		}
+		.btn {
+			padding-top: -10px;
+			text-transform: initial;
+			display: block;
+		}
+	}	
 }

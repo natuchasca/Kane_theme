@@ -13,12 +13,12 @@ green hover what we do #2a7257
 
 header, .portada, .what, .awesome, footer {
   background-color: #27ad60;
-  padding: 30px 0px;
+  padding: 50px 0px;
   color: white; }
 
 .color {
   color: black;
-  padding: 30px 0px; }
+  padding: 50px 0px; }
   .color hr {
     width: 250px;
     border: 1px solid black;
@@ -26,7 +26,7 @@ header, .portada, .what, .awesome, footer {
 
 .about, .best, .clients, .contacto {
   background-color: #2c3e50;
-  padding: 30px 0px;
+  padding: 50px 0px;
   color: white; }
 
 .separador {
@@ -40,12 +40,17 @@ header, .portada, .what, .awesome, footer {
   .btn:hover {
     background-color: #e67e22; }
 
+.bajada {
+  margin-bottom: 30px; }
+
 /* Logo y Nav */
 header {
   padding-bottom: 15px; }
   header nav {
     background-color: transparent;
     box-shadow: none; }
+    header nav ul a:hover {
+      background-color: #e67e22; }
 
 /* Imagen Portada */
 .portada {
@@ -63,157 +68,196 @@ header {
 .azulino {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #69D2E7; }
 
 .celeste {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #A7DBDB; }
 
 .crudo {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #E0E4CC; }
 
 .naranjo {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #F38630; }
 
 .fanta {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #FA6900; }
 
 .rosa {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #E94C6F; }
 
 .cafe {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #542733; }
 
 .gris {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #5A6A62; }
 
 .verdoso {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #C6D5CD; }
 
 .amarillo {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #FDF200; }
 
 .rojo {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #DB3340; }
 
 .calabaza {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #E8B71A; }
 
 .crema {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #F7EAC8; }
 
 .verde {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #1FDA9A; }
 
 .azul {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #28ABE3; }
 
 .verdoso {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #588C73; }
 
 .platano {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #F2E394; }
 
 .mandarin {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #F2AE72; }
 
 .pomelo {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #D96459; }
 
 .vino {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #8C4646; }
 
 .olivo {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #D0C91F; }
 
 .ciano {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #85C4B9; }
 
 .deepazul {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #008BBA; }
 
 .rojado {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #DF514C; }
 
 .rojored {
   width: 150px;
   height: 100px;
+  margin: 0px 10px;
   display: inline-block;
   background-color: #DC403B; }
 
 /* About Us */
-.about img {
-  width: 80%;
-  height: auto; }
+.about {
+  font-size: 14px; }
+  .about img {
+    width: 90%;
+    height: auto; }
+  .about .progress-part {
+    margin-top: 50px; }
+    .about .progress-part .progress {
+      height: 10px;
+      background-color: #c1c1c1;
+      border: 2px solid #c1c1c1;
+      border-radius: 0px; }
+      .about .progress-part .progress .determinate {
+        background-color: #e67e22; }
+  .about .item {
+    margin-top: -10px;
+    font-size: 12px; }
 
 /* What we do */
 .what .icon-image {
@@ -258,11 +302,55 @@ header {
     margin-right: 10px; }
 
 /* Best Price */
+.best .box {
+  border: 1px solid #27ad60; }
+  .best .box h5 {
+    padding: 10px;
+    color: silver;
+    font-size: 20px; }
+  .best .box .fondo-cafe {
+    background-color: #8f5f38; }
+    .best .box .fondo-cafe .starter {
+      margin-top: 0px;
+      padding-top: 20px; }
+  .best .box .fondo-verde {
+    background-color: #27ad60;
+    padding: 5px; }
+    .best .box .fondo-verde p {
+      font-size: 14px; }
+      .best .box .fondo-verde p span {
+        font-size: 40px; }
+    .best .box .fondo-verde .free {
+      margin-top: -20px;
+      font-size: 12px; }
+  .best .box .fondo-bco {
+    background-color: white;
+    color: black;
+    padding: 5px; }
+  .best .box .button-box {
+    padding: 20px 10px 10px 10px; }
+  .best .box:hover {
+    border: 1px solid #e67e22;
+    cursor: pointer;
+    margin-top: -30px; }
+
 /* Clients Say */
 .clients .autor {
   color: #e67e22; }
 
 /* Contacto */
+.contacto input, .contacto textarea {
+  background-color: white;
+  box-sizing: border-box;
+  margin-bottom: -10px; }
+.contacto label {
+  margin-left: 10px; }
+.contacto button {
+  margin-top: 20px;
+  width: 100px;
+  text-align: center;
+  padding: 0px; }
+
 /* Sociales */
 .sociales {
   background-image: url(../img/img-divider-img.jpg);
@@ -279,5 +367,36 @@ footer p {
   color: #443e44; }
 footer a {
   color: white; }
+footer hr {
+  width: 80px;
+  border: 1px solid white;
+  background-color: 1px solid white;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px; }
+footer h4 {
+  text-align: center; }
+footer i {
+  display: inline; }
+footer .content-footer {
+  margin-left: 60px; }
+footer .input-field {
+  width: 150px;
+  display: block; }
+  footer .input-field i {
+    background-color: #443e44;
+    color: #e67e22;
+    padding: 10px; }
+  footer .input-field input {
+    background-color: white;
+    border: 1px solid #443e44;
+    position: absolute;
+    height: 33px;
+    padding-left: 20px;
+    color: black; }
+  footer .input-field .btn {
+    padding-top: -10px;
+    text-transform: initial;
+    display: block; }
 
 /*# sourceMappingURL=main.css.map */
